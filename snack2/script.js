@@ -45,21 +45,26 @@ const cars = [
         },
     ],
     
-    carsGpl = [
+    carsMixed = [
         {
             marca : 'Renault',
             modello : 'Clio',
             alimentazione : 'Gpl'
         },
         {
-            marca : 'Hyundai',
-            modello : 'i20',
-            alimentazione : 'Gpl'
+            marca : 'Honda',
+            modello : 'HondaE',
+            alimentazione : 'Elettrica'
         },
         {
             marca : 'Kia',
             modello : 'Sportage',
             alimentazione : 'Gpl'
+        },
+        {
+            marca : 'hyundai',
+            modello : 'Ioniq5',
+            alimentazione : 'Elettrica'
         },
     ],
 ];
