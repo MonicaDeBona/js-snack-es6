@@ -32,5 +32,13 @@ for (let i = 0; i<class81.length; i++) {
     console.log(class81[i]);
 }
 
+// for (let i = 0; i<class81.length; i++) {
+//     const actualClass = class81[i];
+//         for(let key in actualClass) {
+//             console.log(key);
+//             console.log(actualClass[key]);
+//         }
+//     }
+
 
 
