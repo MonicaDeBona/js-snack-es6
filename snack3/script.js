@@ -13,65 +13,58 @@ const zucchine = [
         lunghezza : 10,
     },
     {
-        varietà : 'romana',
+        varietà : 'pugliese',
+        peso : 22,
+        lunghezza : 10,
+    },
+    {
+        varietà : 'lunga',
+        peso : 25,
+        lunghezza : 10,
+    },
+    {
+        varietà : 'triestina',
+        peso : 11,
+        lunghezza : 10,
+    },
+    {
+        varietà : 'fiorentina',
+        peso : 10,
+        lunghezza : 10,
+    },
+    {
+        varietà : 'corta',
+        peso : 7,
+        lunghezza : 10,
+    },
+    {
+        varietà : 'siciliana',
+        peso : 5,
+        lunghezza : 10,
+    },
+    {
+        varietà : 'napoletana',
         peso : 15,
         lunghezza : 10,
     },
     {
-        varietà : 'romana',
-        peso : 15,
+        varietà : 'nera',
+        peso : 31,
         lunghezza : 10,
     },
     {
-        varietà : 'romana',
-        peso : 15,
-        lunghezza : 10,
-    },
-    {
-        varietà : 'romana',
-        peso : 15,
-        lunghezza : 10,
-    },
-    {
-        varietà : 'romana',
-        peso : 15,
-        lunghezza : 10,
-    },
-    {
-        varietà : 'romana',
-        peso : 15,
-        lunghezza : 10,
-    },
-    {
-        varietà : 'romana',
-        peso : 15,
-        lunghezza : 10,
-    },
-    {
-        varietà : 'romana',
-        peso : 15,
-        lunghezza : 10,
-    },
-    {
-        varietà : 'romana',
-        peso : 15,
+        varietà : 'trombetta',
+        peso : 25,
         lunghezza : 10,
     },
 ];
 
-const weight = [];
-for (let i = 0; i < zucchine.length; i++){
+let pesoTotale = 0;
+let lunghezzaTotale = 0;
 
-const currentZucchine = zucchine[i]
-weight.push(currentZucchine.peso);
-
+for (let i = 0; i < zucchine.length; i++) {
+    pesoTotale = pesoTotale + zucchine[i].peso;
 }
-console.log(weight);
 
-let sum = 0;
-for(let i = 0; i < weight.length; i++){
-
-sum += weight[i];
-
-}
-console.log(sum);
+console.log(pesoTotale);
+console.log(pesoTotale / zucchine.length);

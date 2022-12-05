@@ -6,69 +6,72 @@
     Infine stampa separatamente i 3 array.
  */
 
-
-
 const cars = [
-    carsBenzina = [
-        {
-            marca : 'Fiat',
-            modello : 'Panda',
-            alimentazione : 'Benzina'
-        },
-        {
-            marca : 'Lancia',
-            modello : 'Ypsilon',
-            alimentazione : 'Benzina'
-        },
-        {
-            marca : 'Fiat',
-            modello : 'Punto',
-            alimentazione : 'Benzina'
-        },
-    ],
-    
-    carsDiesel = [
-        {
-            marca : 'Audi',
-            modello : 'A1',
-            alimentazione : 'Diesel'
-        },
-        {
-            marca : 'Alfa Romeo',
-            modello : 'Giulia',
-            alimentazione : 'Diesel'
-        },
-        {
-            marca : 'Bmw',
-            modello : 'Nazca M12',
-            alimentazione : 'Diesel'
-        },
-    ],
-    
-    carsMixed = [
-        {
-            marca : 'Renault',
-            modello : 'Clio',
-            alimentazione : 'Gpl'
-        },
-        {
-            marca : 'Honda',
-            modello : 'HondaE',
-            alimentazione : 'Elettrica'
-        },
-        {
-            marca : 'Kia',
-            modello : 'Sportage',
-            alimentazione : 'Gpl'
-        },
-        {
-            marca : 'hyundai',
-            modello : 'Ioniq5',
-            alimentazione : 'Elettrica'
-        },
-    ],
+    {
+        marca : 'Fiat',
+        modello : 'Panda',
+        alimentazione : 'Benzina'
+    },
+    {
+        marca : 'Lancia',
+        modello : 'Ypsilon',
+        alimentazione : 'Benzina'
+    },
+    {
+        marca : 'Fiat',
+        modello : 'Punto',
+        alimentazione : 'Benzina'
+    },
+    {
+        marca : 'Audi',
+        modello : 'A1',
+        alimentazione : 'Diesel'
+    },
+    {
+        marca : 'Alfa Romeo',
+        modello : 'Giulia',
+        alimentazione : 'Diesel'
+    },
+    {
+        marca : 'Bmw',
+        modello : 'Nazca M12',
+        alimentazione : 'Diesel'
+    },
+    {
+        marca : 'Renault',
+        modello : 'Clio',
+        alimentazione : 'Gpl'
+    },
+    {
+        marca : 'Honda',
+        modello : 'HondaE',
+        alimentazione : 'Elettrica'
+    },
+    {
+        marca : 'Kia',
+        modello : 'Sportage',
+        alimentazione : 'Gpl'
+    },
+    {
+        marca : 'hyundai',
+        modello : 'Ioniq5',
+        alimentazione : 'Elettrica'
+    },
 ];
 
-    for (let i = 0; i < cars.length; i++) {
-    console.log(cars[i]);
+const carDiesel = [];
+const carBenzina = [];
+const carMixed = [];
+
+for (let i = 0; i < cars.length; i++) {
+    const currentCars = cars[i];
+    if (currentCars === 'Benzina') {
+        carBenzina.push(currentCars);
+    } else if(currentCars === 'Diesel') {
+        carDiesel.push(currentCars);
+    } else {
+        carMixed.push(currentCars);
+    }
 }
+
+console.log(carBenzina, carDiesel, carMixed);
