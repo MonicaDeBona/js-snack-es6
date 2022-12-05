@@ -6,68 +6,64 @@
     Infine stampa separatamente i 3 array.
  */
 
-const carsBenzina = [
-    {
-        marca : 'Fiat',
-        modello : 'Panda',
-        alimentazione : 'Benzina'
-    },
-    {
-        marca : 'Lancia',
-        modello : 'Ypsilon',
-        alimentazione : 'Benzina'
-    },
-    {
-        marca : 'Fiat',
-        modello : 'Punto',
-        alimentazione : 'Benzina'
-    },
+
+
+const cars = [
+    carsBenzina = [
+        {
+            marca : 'Fiat',
+            modello : 'Panda',
+            alimentazione : 'Benzina'
+        },
+        {
+            marca : 'Lancia',
+            modello : 'Ypsilon',
+            alimentazione : 'Benzina'
+        },
+        {
+            marca : 'Fiat',
+            modello : 'Punto',
+            alimentazione : 'Benzina'
+        },
+    ],
+    
+    carsDiesel = [
+        {
+            marca : 'Audi',
+            modello : 'A1',
+            alimentazione : 'Diesel'
+        },
+        {
+            marca : 'Alfa Romeo',
+            modello : 'Giulia',
+            alimentazione : 'Diesel'
+        },
+        {
+            marca : 'Bmw',
+            modello : 'Nazca M12',
+            alimentazione : 'Diesel'
+        },
+    ],
+    
+    carsGpl = [
+        {
+            marca : 'Renault',
+            modello : 'Clio',
+            alimentazione : 'Gpl'
+        },
+        {
+            marca : 'Hyundai',
+            modello : 'i20',
+            alimentazione : 'Gpl'
+        },
+        {
+            marca : 'Kia',
+            modello : 'Sportage',
+            alimentazione : 'Gpl'
+        },
+    ],
 ];
 
-for (let i = 0; i < carsBenzina.length; i++) {
-    console.log(carsBenzina[i]);
-}
-
-const carsDiesel = [
-    {
-        marca : 'Audi',
-        modello : 'A1',
-        alimentazione : 'Diesel'
-    },
-    {
-        marca : 'Alfa Romeo',
-        modello : 'Giulia',
-        alimentazione : 'Diesel'
-    },
-    {
-        marca : 'Bmw',
-        modello : 'Nazca M12',
-        alimentazione : 'Diesel'
-    },
-];
-
-for (let i = 0; i < carsDiesel.length; i++) {
-    console.log(carsDiesel[i]);
-}
-
-const carsGpl = [
-    {
-        marca : 'Renault',
-        modello : 'Clio',
-        alimentazione : 'Gpl'
-    },
-    {
-        marca : 'Hyundai',
-        modello : 'i20',
-        alimentazione : 'Gpl'
-    },
-    {
-        marca : 'Kia',
-        modello : 'Sportage',
-        alimentazione : 'Gpl'
-    },
-];
-
-for (let i = 0; i < carsGpl.length; i++) {
-    console.log(carsGpl[i]);
+    for (let i = 0; i < cars.length; i++) {
+    console.log(cars[i]);
 }
