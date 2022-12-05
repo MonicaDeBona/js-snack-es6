@@ -14,3 +14,23 @@ const student = {
 for (let key in student) {
     console.log(student[key]);
 }
+
+const class81 = [
+    {
+        'name' : 'Monica',
+        'surname' : 'De Bona',
+        'age': 31,
+    },
+    {
+        'name' : 'Jhon',
+        'surname' : 'Doe',
+        'age': 31,
+    }
+];
+
+for (let i = 0; i<class81.length; i++) {
+    console.log(class81[i]);
+}
+
+
+
