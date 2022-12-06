@@ -10,52 +10,52 @@ const cars = [
     {
         marca : 'Fiat',
         modello : 'Panda',
-        alimentazione : 'Benzina'
+        alimentazione : 'benzina'
     },
     {
         marca : 'Lancia',
         modello : 'Ypsilon',
-        alimentazione : 'Benzina'
+        alimentazione : 'benzina'
     },
     {
         marca : 'Fiat',
         modello : 'Punto',
-        alimentazione : 'Benzina'
+        alimentazione : 'benzina'
     },
     {
         marca : 'Audi',
         modello : 'A1',
-        alimentazione : 'Diesel'
+        alimentazione : 'diesel'
     },
     {
         marca : 'Alfa Romeo',
         modello : 'Giulia',
-        alimentazione : 'Diesel'
+        alimentazione : 'diesel'
     },
     {
         marca : 'Bmw',
         modello : 'Nazca M12',
-        alimentazione : 'Diesel'
+        alimentazione : 'diesel'
     },
     {
         marca : 'Renault',
         modello : 'Clio',
-        alimentazione : 'Gpl'
+        alimentazione : 'gpl'
     },
     {
         marca : 'Honda',
         modello : 'HondaE',
-        alimentazione : 'Elettrica'
+        alimentazione : 'elettrica'
     },
     {
         marca : 'Kia',
         modello : 'Sportage',
-        alimentazione : 'Gpl'
+        alimentazione : 'gpl'
     },
     {
         marca : 'hyundai',
         modello : 'Ioniq5',
-        alimentazione : 'Elettrica'
+        alimentazione : 'elettrica'
     },
 ];
 
@@ -65,9 +65,9 @@ const carMixed = [];
 
 for (let i = 0; i < cars.length; i++) {
     const currentCars = cars[i];
-    if (currentCars === 'Benzina') {
+    if (currentCars.alimentazione === 'benzina') {
         carBenzina.push(currentCars);
-    } else if(currentCars === 'Diesel') {
+    } else if(currentCars.alimentazione === 'diesel') {
         carDiesel.push(currentCars);
     } else {
         carMixed.push(currentCars);
